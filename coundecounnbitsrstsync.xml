@@ -1,0 +1,18 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='CounDecounNbitsRSTsync'>
+  <useClause path='ieee.NUMERIC_STD.all' />
+  <useClause path='ieee.std_logic_1164.all' />
+    <macroList>
+
+      <macro name='N' type='INTEGER' kind='' baseType='integer' initializer='8' />
+
+    </macroList>
+    <portList>
+
+      <port name='CLK' direction='in' type='STD_LOGIC' kind='' />
+      <port name='reset' direction='in' type='STD_LOGIC' kind='' />
+      <port name='enable' direction='in' type='STD_LOGIC' kind='' />
+      <port name='up_down' direction='in' type='STD_LOGIC' kind='' />
+      <port name='count' direction='out' type='std_logic_vector (N - 1 downto 0)' kind='array' library='work' package='CounDecounNbitsRSTsync' packedDimension=' (N - 1 downto 0)' />
+
+    </portList>
+</interfaceDefinition>

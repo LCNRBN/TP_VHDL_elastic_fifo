@@ -1,0 +1,13 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='GENHL'>
+  <useClause path='work.mes_composants.all' />
+  <useClause path='ieee.STD_LOGIC_UNSIGNED.all' />
+  <useClause path='ieee.std_logic_1164.all' />
+    <portList>
+
+      <port name='CLK' direction='in' type='STD_LOGIC' kind='' />
+      <port name='RESET' direction='in' type='STD_LOGIC' kind='' />
+      <port name='ENREAD' direction='out' type='STD_LOGIC' kind='' />
+      <port name='ENWRITE' direction='out' type='STD_LOGIC' kind='' />
+
+    </portList>
+</interfaceDefinition>

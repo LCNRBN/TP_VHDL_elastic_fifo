@@ -1,0 +1,20 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='RegN'>
+  <useClause path='work.mes_fonctions.all' />
+  <useClause path='ieee.STD_LOGIC_UNSIGNED.all' />
+  <useClause path='ieee.std_logic_1164.all' />
+    <macroList>
+
+      <macro name='N' type='NATURAL' kind='' baseType='integer' initializer='8' />
+      <macro name='t_setup' type='TIME' kind='' baseType='physical' initializer='10 ns' />
+      <macro name='t_hold' type='TIME' kind='' baseType='physical' initializer='5 ns' />
+
+    </macroList>
+    <portList>
+
+      <port name='CLK' direction='in' type='STD_LOGIC' kind='' />
+      <port name='Reset' direction='in' type='STD_LOGIC' kind='' />
+      <port name='Din' direction='in' type='std_logic_vector (N - 1 downto 0)' kind='array' library='work' package='RegN' packedDimension=' (N - 1 downto 0)' />
+      <port name='Q' direction='out' type='std_logic_vector (N - 1 downto 0)' kind='array' library='work' package='RegN' packedDimension=' (N - 1 downto 0)' />
+
+    </portList>
+</interfaceDefinition>

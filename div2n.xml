@@ -1,0 +1,15 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='div2N'>
+  <useClause path='ieee.std_logic_1164.all' />
+    <macroList>
+
+      <macro name='N' type='INTEGER' kind='' baseType='integer' initializer='4' />
+
+    </macroList>
+    <portList>
+
+      <port name='CLK' direction='in' type='STD_LOGIC' kind='' />
+      <port name='reset' direction='in' type='STD_LOGIC' kind='' />
+      <port name='CLK_OUT' direction='out' type='STD_LOGIC' kind='' />
+
+    </portList>
+</interfaceDefinition>

@@ -1,0 +1,29 @@
+LIBRARY ieee  ; 
+USE ieee.std_logic_1164.all  ; 
+ENTITY div2n_tb  IS 
+  GENERIC (
+    N  : INTEGER   := 4 ); 
+END ; 
+ 
+ARCHITECTURE div2n_tb_arch OF div2n_tb IS
+  SIGNAL CLK_OUT   :  STD_LOGIC  ; 
+  SIGNAL CLK   :  STD_LOGIC  ; 
+  SIGNAL reset   :  STD_LOGIC  ; 
+  COMPONENT div2N  
+    GENERIC ( 
+      N  : INTEGER  );  
+    PORT ( 
+      CLK_OUT  : out STD_LOGIC ; 
+      CLK  : in STD_LOGIC ; 
+      reset  : in STD_LOGIC ); 
+  END COMPONENT ; 
+BEGIN
+  DUT  : div2N  
+    GENERIC MAP ( 
+      N  => N   )
+    PORT MAP ( 
+      CLK_OUT   => CLK_OUT  ,
+      CLK   => CLK  ,
+      reset   => reset   ) ; 
+END ; 
+
