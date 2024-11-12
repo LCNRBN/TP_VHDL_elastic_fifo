@@ -1,0 +1,22 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='seq'>
+  <useClause path='work.CHECK_PKG.all' />
+  <useClause path='ieee.STD_LOGIC_UNSIGNED.all' />
+  <useClause path='ieee.std_logic_1164.all' />
+    <portList>
+
+      <port name='CLK' direction='in' type='STD_LOGIC' kind='' />
+      <port name='Reset' direction='in' type='STD_LOGIC' kind='' />
+      <port name='Enread' direction='in' type='STD_LOGIC' kind='' />
+      <port name='Enwrite' direction='in' type='STD_LOGIC' kind='' />
+      <port name='req' direction='in' type='STD_LOGIC' kind='' />
+      <port name='Ack' direction='out' type='STD_LOGIC' kind='' initializer='&apos;0&apos;' />
+      <port name='RW_n' direction='out' type='STD_LOGIC' kind='' initializer='&apos;1&apos;' />
+      <port name='OE' direction='out' type='STD_LOGIC' kind='' initializer='&apos;0&apos;' />
+      <port name='Incwrite' direction='out' type='STD_LOGIC' kind='' initializer='&apos;0&apos;' />
+      <port name='Incread' direction='out' type='STD_LOGIC' kind='' initializer='&apos;0&apos;' />
+      <port name='HL' direction='out' type='STD_LOGIC' kind='' initializer='&apos;0&apos;' />
+      <port name='Selread' direction='out' type='STD_LOGIC' kind='' initializer='&apos;0&apos;' />
+      <port name='CS_n' direction='out' type='STD_LOGIC' kind='' initializer='&apos;1&apos;' />
+
+    </portList>
+</interfaceDefinition>

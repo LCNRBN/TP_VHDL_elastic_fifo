@@ -33,6 +33,32 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity div2_tb
 -- Compiling architecture div2_tb_arch of div2_tb
 
+} {} {}} C:/altera/configuration.vhd {1 {vcom -work work -2002 -explicit C:/altera/configuration.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling configuration test_seq
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package CHECK_PKG
+-- Loading entity seq_tb
+-- Loading architecture seq_tb_arch of seq_tb
+-- Loading entity seq
+
+} {} {}} C:/altera/seq.vhd {1 {vcom -work work -2002 -explicit C:/altera/seq.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package CHECK_PKG
+-- Compiling entity seq
+-- Compiling architecture archi_Mealy of seq
+-- Compiling architecture archi_Moore of seq
+-- Loading entity seq
+
 } {} {}} genadr_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/genadr_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -52,6 +78,18 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Compiling entity coundecounnbitsrstsync_tb
 -- Compiling architecture coundecounnbitsrstsync_tb_arch of coundecounnbitsrstsync_tb
+
+} {} {}} C:/altera/FIFO.vhd {1 {vcom -work work -2002 -explicit C:/altera/FIFO.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package CHECK_PKG
+-- Loading package mes_composants
+-- Compiling entity FIFO
+-- Compiling architecture FIFO_arch of FIFO
 
 } {} {}} C:/altera/RegN.vhd {1 {vcom -work work -2002 -explicit C:/altera/RegN.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -102,6 +140,17 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity div2
 -- Compiling architecture div2 of div2
 
+} {} {}} C:/altera/GENHL.vhd {1 {vcom -work work -2002 -explicit C:/altera/GENHL.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package mes_composants
+-- Compiling entity GENHL
+-- Compiling architecture GENHL_arch of GENHL
+
 } {} {}} complement_a_2_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/complement_a_2_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -124,17 +173,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity RAM
 -- Compiling architecture Behavioral of RAM
 
-} {} {}} C:/altera/GENHL.vhd {1 {vcom -work work -2002 -explicit C:/altera/GENHL.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package mes_composants
--- Compiling entity GENHL
--- Compiling architecture GENHL_arch of GENHL
-
 } {} {}} genhl_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/genhl_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -145,26 +183,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package mes_composants
 -- Compiling entity genhl_tb
 -- Compiling architecture genhl_tb_arch of genhl_tb
-
-} {} {}} C:/altera/CounDecounNbitsRSTsync.vhd {1 {vcom -work work -2002 -explicit C:/altera/CounDecounNbitsRSTsync.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity CounDecounNbitsRSTsync
--- Compiling architecture Behavioral of CounDecounNbitsRSTsync
-
-} {} {}} ram_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/ram_tb.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity RAM_tb
--- Compiling architecture Behavioral of RAM_tb
 
 } {} {}} C:/altera/genadr.vhd {1 {vcom -work work -2002 -explicit C:/altera/genadr.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -177,13 +195,43 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity genadr
 -- Compiling architecture genadr_arch of genadr
 
-} {} {}} C:/altera/div2N.vhd {1 {vcom -work work -2002 -explicit C:/altera/div2N.vhd
+} {} {}} ram_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/ram_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity div2N
--- Compiling architecture Behavioral of div2N
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity RAM_tb
+-- Compiling architecture Behavioral of RAM_tb
+
+} {} {}} C:/altera/CounDecounNbitsRSTsync.vhd {1 {vcom -work work -2002 -explicit C:/altera/CounDecounNbitsRSTsync.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity CounDecounNbitsRSTsync
+-- Compiling architecture Behavioral of CounDecounNbitsRSTsync
+
+} {} {}} seq_tb.vhd {1 {vcom -work work -2002 -explicit C:/altera/seq_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package CHECK_PKG
+-- Compiling entity seq_tb
+-- Compiling architecture seq_tb_arch of seq_tb
+
+} {} {}} C:/altera/mes_composants.vhd {1 {vcom -work work -2002 -explicit C:/altera/mes_composants.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package mes_composants
 
 } {} {}} C:/altera/fastslow.vhd {1 {vcom -work work -2002 -explicit C:/altera/fastslow.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -196,11 +244,12 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity fastslow
 -- Compiling architecture fastslow_arch of fastslow
 
-} {} {}} C:/altera/mes_composants.vhd {1 {vcom -work work -2002 -explicit C:/altera/mes_composants.vhd
+} {} {}} C:/altera/div2N.vhd {1 {vcom -work work -2002 -explicit C:/altera/div2N.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling package mes_composants
+-- Compiling entity div2N
+-- Compiling architecture Behavioral of div2N
 
 } {} {}}

@@ -20,7 +20,6 @@ end genadr;
 architecture genadr_arch of genadr is
   signal count1 : std_logic_vector(M-1 downto 0);
   signal count2 : std_logic_vector(M-1 downto 0);
-  signal local_reset : std_logic;
   
   begin
   U1 : CounDecounNbitsRSTsync 
@@ -31,9 +30,9 @@ architecture genadr_arch of genadr is
   up_down => '1', 
   count => count1
  
-); 
+  ); 
  
-  U2 : CounDecounNbitsRSTsync 
+  BLOCK1 :  
   port map(
   CLK  => CLK, 
   reset => reset, 
@@ -41,7 +40,7 @@ architecture genadr_arch of genadr is
   up_down => '1', 
   count => count2
  
-);
+  );
  
   Adrg <= count1 when selread = '1' else count2; --mux 
 end genadr_arch;

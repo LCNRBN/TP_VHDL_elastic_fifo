@@ -30,7 +30,7 @@ architecture genadr_arch of genadr is
   up_down => '1', 
   count => count1
  
-); 
+  ); 
  
   U2 : CounDecounNbitsRSTsync 
   port map(
@@ -40,7 +40,7 @@ architecture genadr_arch of genadr is
   up_down => '1', 
   count => count2
  
-);
+  );
  
   Adrg <= count1 when selread = '1' else count2; --mux 
 end genadr_arch;

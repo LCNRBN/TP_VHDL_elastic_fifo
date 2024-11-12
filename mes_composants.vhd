@@ -3,7 +3,7 @@ library ieee ;
 use ieee.std_logic_1164.all ;
 
 package mes_composants is
-  component CounDecounNbitsRSTsync is
+component CounDecounNbitsRSTsync is
   generic (
     N : integer := 8  -- nombre de bits du compteur
   );
@@ -69,6 +69,34 @@ component complement_a_2 is
 generic (N : natural := 8);
 port (nombre : in std_logic_vector (N-1 downto 0);
       sortie : out std_logic_vector (N-1 downto 0));
+end component;
+
+component RegN is
+generic(N : natural := 8; t_setup : time := 10 ns; t_hold : time := 5 ns);
+  port (
+    CLK     : in  std_logic;
+    Reset   : in  std_logic;
+    Din : in std_logic_vector(N-1 downto 0);
+    Q : out std_logic_vector(N-1 downto 0)
+  );
+end component;
+
+component seq is
+port (
+    CLK     : in  std_logic;
+    Reset   : in  std_logic;
+    Enread  : in  std_logic;
+    Enwrite : in  std_logic;
+    req     : in  std_logic;
+    Ack     : out std_logic := '0';
+    RW_n    : out std_logic := '1';
+    OE      : out std_logic := '0';
+    Incwrite: out std_logic := '0';
+    Incread : out std_logic := '0';
+    HL      : out std_logic := '0';
+    Selread : out std_logic := '0';
+    CS_n    : out std_logic := '1'
+);
 end component;
 
 end mes_composants ;
